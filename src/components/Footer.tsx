@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { Instagram, MapPin, Phone } from 'lucide-react';
+import { Instagram, MapPin, Phone, MessageSquare } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -13,7 +13,7 @@ const Footer = () => {
             <img 
               src="/lovable-uploads/65e3c759-f8b9-4ce8-bae4-5cb5dff49923.png" 
               alt="Nilco Bags" 
-              className="h-12 mb-4 invert"
+              className="h-12 mb-4"
             />
             <p className="text-sm text-gray-300 max-w-xs">
               Established in 2013, Nilco Bags has been a trusted name in the world of bags and luggage for over 11 years.
@@ -39,7 +39,7 @@ const Footer = () => {
               <li className="flex items-center gap-3">
                 <Instagram size={18} className="flex-shrink-0 text-nilco-red" />
                 <a 
-                  href="https://instagram.com/nilcoonline" 
+                  href="https://www.instagram.com/nilcoonlines?igsh=MWwzZnljNHlnZnM5aA==" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-sm hover:text-nilco-red transition-colors duration-300"
@@ -50,12 +50,23 @@ const Footer = () => {
               <li className="flex items-center gap-3">
                 <MapPin size={18} className="flex-shrink-0 text-nilco-red" />
                 <a 
-                  href="https://maps.google.com" 
+                  href="https://maps.app.goo.gl/hsoAjBt3SancHA3A6" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-sm hover:text-nilco-red transition-colors duration-300"
                 >
                   View Store Locations
+                </a>
+              </li>
+              <li className="flex items-center gap-3">
+                <MessageSquare size={18} className="flex-shrink-0 text-nilco-red" />
+                <a 
+                  href="https://wa.me/qr/LUMOSJYMQBMKM1" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-sm hover:text-nilco-red transition-colors duration-300"
+                >
+                  Chat with us on WhatsApp
                 </a>
               </li>
             </ul>
