@@ -1,0 +1,73 @@
+
+import { Link } from 'react-router-dom';
+import { Instagram, MapPin, Phone } from 'lucide-react';
+
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
+  
+  return (
+    <footer className="bg-nilco-navy text-white mt-20">
+      <div className="container mx-auto px-4 py-12 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div className="flex flex-col items-start">
+            <img 
+              src="/lovable-uploads/65e3c759-f8b9-4ce8-bae4-5cb5dff49923.png" 
+              alt="Nilco Bags" 
+              className="h-12 mb-4 invert"
+            />
+            <p className="text-sm text-gray-300 max-w-xs">
+              Established in 2013, Nilco Bags has been a trusted name in the world of bags and luggage for over 11 years.
+            </p>
+          </div>
+          
+          <div>
+            <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
+            <ul className="space-y-2">
+              <li><Link to="/" className="text-sm hover:text-nilco-red transition-colors duration-300">Home</Link></li>
+              <li><Link to="/about" className="text-sm hover:text-nilco-red transition-colors duration-300">About Us</Link></li>
+              <li><Link to="/contact" className="text-sm hover:text-nilco-red transition-colors duration-300">Contact</Link></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="font-semibold text-lg mb-4">Contact Us</h3>
+            <ul className="space-y-3">
+              <li className="flex items-center gap-3">
+                <Phone size={18} className="flex-shrink-0 text-nilco-red" />
+                <span className="text-sm">+91 908722333</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Instagram size={18} className="flex-shrink-0 text-nilco-red" />
+                <a 
+                  href="https://instagram.com/nilcoonline" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-sm hover:text-nilco-red transition-colors duration-300"
+                >
+                  Nilco Online
+                </a>
+              </li>
+              <li className="flex items-center gap-3">
+                <MapPin size={18} className="flex-shrink-0 text-nilco-red" />
+                <a 
+                  href="https://maps.google.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-sm hover:text-nilco-red transition-colors duration-300"
+                >
+                  View Store Locations
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div className="mt-10 pt-8 border-t border-gray-800 text-center text-sm text-gray-400">
+          <p>© {currentYear} Nilco Bags. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
