@@ -22,7 +22,7 @@ const Hero = () => {
           className="text-center max-w-3xl"
         >
           <img 
-            src="/lovable-uploads/65e3c759-f8b9-4ce8-bae4-5cb5dff49923.png" 
+            src="/lovable-uploads/1a86d351-084d-44e6-88ed-74146d7de64d.png" 
             alt="Nilco Bags" 
             className="h-24 md:h-32 mx-auto mb-8 animate-float"
           />
