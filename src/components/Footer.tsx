@@ -61,7 +61,7 @@ const Footer = () => {
               <li className="flex items-center gap-3">
                 <MessageSquare size={18} className="flex-shrink-0 text-nilco-red" />
                 <a 
-                  href="https://wa.me/qr/LUMOSJYMQBMKM1" 
+                  href="https://wa.me/9025266485" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-sm hover:text-nilco-red transition-colors duration-300"
