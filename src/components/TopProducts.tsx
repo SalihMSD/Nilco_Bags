@@ -5,27 +5,19 @@ import ProductCard from './ProductCard';
 const topSellingProducts = [
   {
     id: 1,
-    name: "Premium College Bag",
     image: "https://drive.google.com/uc?export=view&id=1fE72VoGbUD5Z6MatLN2AsIfN97Q1Um0x",
-    category: "College Bags"
   },
   {
     id: 2,
-    name: "24\" Premium Trolley",
     image: "https://drive.google.com/uc?export=view&id=18_uI7k1J_ez14tPZ2NLmmw4XOk47IRLR",
-    category: "Trolley"
   },
   {
     id: 3,
-    name: "Premium Ladies Purse",
     image: "https://drive.google.com/uc?export=view&id=1jDEoF5UbxTX6Y1XvmW5yrAcKOO-kF0cH",
-    category: "Ladies Purses"
   },
   {
     id: 4,
-    name: "Premium Travel Bag",
     image: "https://drive.google.com/uc?export=view&id=14CTvejogBxKY6G7siwnNfySHZOhqzOz4",
-    category: "Travel Bags"
   }
 ];
 
@@ -49,8 +41,8 @@ const TopProducts = () => {
             <ProductCard
               key={product.id}
               image={product.image}
-              name={product.name}
               delay={index}
+              hideTitle={true}
             />
           ))}
         </div>
