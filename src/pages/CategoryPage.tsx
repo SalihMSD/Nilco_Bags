@@ -1,3 +1,4 @@
+
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Navbar from '../components/Navbar';
@@ -202,4 +203,3 @@ const CategoryPage = () => {
 };
 
 export default CategoryPage;
-

@@ -7,9 +7,12 @@ interface CategoryCardProps {
   name: string;
   count: number;
   delay?: number;
+  route?: string;
 }
 
-const CategoryCard = ({ image, name, count, delay = 0 }: CategoryCardProps) => {
+const CategoryCard = ({ image, name, count, delay = 0, route }: CategoryCardProps) => {
+  const categoryPath = route || name.toLowerCase().replace(/\s+/g, '-');
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -17,7 +20,7 @@ const CategoryCard = ({ image, name, count, delay = 0 }: CategoryCardProps) => {
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: delay * 0.1 }}
     >
-      <Link to={`/category/${name.toLowerCase().replace(/\s+/g, '-')}`} className="block">
+      <Link to={`/category/${categoryPath}`} className="block">
         <div className="group relative overflow-hidden rounded-xl bg-white shadow-md hover-scale">
           <div className="aspect-[4/3] w-full overflow-hidden bg-gray-100">
             <img 
@@ -25,6 +28,10 @@ const CategoryCard = ({ image, name, count, delay = 0 }: CategoryCardProps) => {
               alt={name} 
               className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
+              onError={(e) => {
+                // Fallback image if image fails to load
+                (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1491637639811-60e2756cc1c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80";
+              }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-4 md:p-6">
               <h3 className="font-semibold text-white text-base md:text-lg">{name}</h3>

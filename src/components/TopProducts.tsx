@@ -5,27 +5,27 @@ import ProductCard from './ProductCard';
 const topSellingProducts = [
   {
     id: 1,
-    name: "Atlas School Bag",
-    image: "https://images.unsplash.com/photo-1598532163257-ae3c6b2524b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    category: "School Bags"
-  },
-  {
-    id: 2,
-    name: "Voyager College Backpack",
-    image: "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    name: "Premium College Bag",
+    image: "https://drive.google.com/uc?export=view&id=1fE72VoGbUD5Z6MatLN2AsIfN97Q1Um0x",
     category: "College Bags"
   },
   {
+    id: 2,
+    name: "24\" Premium Trolley",
+    image: "https://drive.google.com/uc?export=view&id=18_uI7k1J_ez14tPZ2NLmmw4XOk47IRLR",
+    category: "Trolley"
+  },
+  {
     id: 3,
-    name: "Horizon Duffle Bag",
-    image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    category: "Duffle Bags"
+    name: "Premium Ladies Purse",
+    image: "https://drive.google.com/uc?export=view&id=1jDEoF5UbxTX6Y1XvmW5yrAcKOO-kF0cH",
+    category: "Ladies Purses"
   },
   {
     id: 4,
-    name: "Expedition Trolley Set",
-    image: "https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-    category: "Trolley Set"
+    name: "Premium Travel Bag",
+    image: "https://drive.google.com/uc?export=view&id=14CTvejogBxKY6G7siwnNfySHZOhqzOz4",
+    category: "Travel Bags"
   }
 ];
 

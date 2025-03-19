@@ -6,68 +6,121 @@ const categories = [
   {
     id: 1,
     name: "School Bags",
-    count: 12,
-    image: "https://images.unsplash.com/photo-1588072433116-9a1e2b4e4ad2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    count: 4,
+    image: "https://images.unsplash.com/photo-1588072433116-9a1e2b4e4ad2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    route: "school-bags"
   },
   {
     id: 2,
     name: "College Bags",
-    count: 8,
-    image: "https://images.unsplash.com/photo-1580087433295-ab2600c1030e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    count: 6,
+    image: "https://drive.google.com/uc?export=view&id=1zQdCkb2p6OoJxYLgEtal3vHHdqGN6khM",
+    route: "college-bags"
   },
   {
     id: 3,
     name: "Travel Bags",
-    count: 5,
-    image: "https://images.unsplash.com/photo-1581553673739-c4906b5d0de8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    count: 4,
+    image: "https://drive.google.com/uc?export=view&id=1OZiIADdvLohgghJagnZUANK43jXG3ly4",
+    route: "travel-bags"
   },
   {
     id: 4,
     name: "Trekking Bags",
-    count: 4,
-    image: "https://images.unsplash.com/photo-1520121401995-928cd50d4e27?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    count: 3,
+    image: "https://drive.google.com/uc?export=view&id=1srjoHeN7iJcEhr3iCE28pfqt6achdevr",
+    route: "trekking-bags"
   },
   {
     id: 5,
     name: "Backpacks",
-    count: 4,
-    image: "https://images.unsplash.com/photo-1491637639811-60e2756cc1c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    count: 2,
+    image: "https://images.unsplash.com/photo-1491637639811-60e2756cc1c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    route: "backpacks"
   },
   {
     id: 6,
     name: "Laptop Bags",
-    count: 4,
-    image: "https://images.unsplash.com/photo-1531578683379-9723f821994c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    count: 3,
+    image: "https://drive.google.com/uc?export=view&id=1KAy9Fk5ei6MzeEsD80Qwit5Dpa2CsyRc",
+    route: "laptop-bags"
   },
   {
     id: 7,
     name: "Duffle Bags",
     count: 3,
-    image: "https://images.unsplash.com/photo-1539635257242-1e414e9c0e1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    image: "https://drive.google.com/uc?export=view&id=1_Bpt1KVI_iUJiqiODi8dgh_n_v-q4e4U",
+    route: "duffle-bags"
   },
   {
     id: 8,
     name: "Trolleys",
-    count: 14,
-    image: "https://images.unsplash.com/photo-1604702650603-68c9c77f373d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    count: 12,
+    image: "https://drive.google.com/uc?export=view&id=1jQiktAMl1pPBkC3_Hh-R9-jiTR8MvnJq",
+    route: "trolleys"
   },
   {
     id: 9,
-    name: "Lunch Bags",
-    count: 8,
-    image: "https://images.unsplash.com/photo-1595424389456-7b32121e37ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    name: "20\" Trolley",
+    count: 4,
+    image: "https://drive.google.com/uc?export=view&id=1u4XYHc0xSiwsKQQtOtCQBDJJJmlrKlDh",
+    route: "trolley-20"
   },
   {
     id: 10,
-    name: "Purses",
-    count: 20,
-    image: "https://images.unsplash.com/photo-1614179689702-66d0fef4b9b6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    name: "24\" Trolley",
+    count: 4,
+    image: "https://drive.google.com/uc?export=view&id=1cdSzZyEntXwsr23YfU8PEx5BP8ZCDXgQ",
+    route: "trolley-24"
   },
   {
     id: 11,
+    name: "28\" Trolley",
+    count: 4,
+    image: "https://drive.google.com/uc?export=view&id=1eL3RIHKfO1Zyza6qfpjMOrlSF7crUzJl",
+    route: "trolley-28"
+  },
+  {
+    id: 12,
+    name: "Lunch Bags",
+    count: 8,
+    image: "https://drive.google.com/uc?export=view&id=1bokpRseMxZgIr1DVVpmkneGOEzts9xaq",
+    route: "lunch-bags"
+  },
+  {
+    id: 13,
+    name: "Ladies Purses",
+    count: 9,
+    image: "https://drive.google.com/uc?export=view&id=1Zs1nt1VjIJ8DZXdDyv36HzK3T4QNcj_c",
+    route: "ladies-purses"
+  },
+  {
+    id: 14,
+    name: "Gents Purses",
+    count: 10,
+    image: "https://drive.google.com/uc?export=view&id=1L96i19VF_lO-RA7Q1va81iMTwrPa8TEQ",
+    route: "gents-purses"
+  },
+  {
+    id: 15,
     name: "Belts",
-    count: 6,
-    image: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    count: 2,
+    image: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    route: "belts"
+  },
+  {
+    id: 16,
+    name: "KG Bags",
+    count: 4,
+    image: "https://drive.google.com/uc?export=view&id=1Cm2ztenIkIlHtvuQJbU0ASgpuaG5p_uf",
+    route: "kg-bags"
+  },
+  {
+    id: 17,
+    name: "Primary Bags",
+    count: 4,
+    image: "https://drive.google.com/uc?export=view&id=1HgpCaWWfsslXOCDimh2BWBWbsQ1DzAj3",
+    route: "primary-bags"
   }
 ];
 
@@ -94,6 +147,7 @@ const AllProducts = () => {
               count={category.count}
               image={category.image}
               delay={index}
+              route={category.route}
             />
           ))}
         </div>

@@ -25,7 +25,7 @@ const App = () => (
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/category/:categoryId" element={<CategoryPage />} />
-            {/* Adding additional routes for subcategories */}
+            {/* All product category routes */}
             <Route path="/ladies-purses" element={<CategoryPage />} />
             <Route path="/gents-purses" element={<CategoryPage />} />
             <Route path="/trolley-20" element={<CategoryPage />} />
@@ -33,6 +33,17 @@ const App = () => (
             <Route path="/trolley-28" element={<CategoryPage />} />
             <Route path="/primary-bags" element={<CategoryPage />} />
             <Route path="/kg-bags" element={<CategoryPage />} />
+            <Route path="/college-bags" element={<CategoryPage />} />
+            <Route path="/school-bags" element={<CategoryPage />} />
+            <Route path="/travel-bags" element={<CategoryPage />} />
+            <Route path="/trekking-bags" element={<CategoryPage />} />
+            <Route path="/laptop-bags" element={<CategoryPage />} />
+            <Route path="/duffle-bags" element={<CategoryPage />} />
+            <Route path="/lunch-bags" element={<CategoryPage />} />
+            <Route path="/backpacks" element={<CategoryPage />} />
+            <Route path="/trolleys" element={<CategoryPage />} />
+            <Route path="/purses" element={<CategoryPage />} />
+            <Route path="/belts" element={<CategoryPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </AnimatePresence>
