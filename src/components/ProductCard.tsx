@@ -10,12 +10,12 @@ interface ProductCardProps {
 
 const ProductCard = ({ image, name, delay = 0 }: ProductCardProps) => {
   const handleWhatsAppClick = () => {
-    // Create a WhatsApp message with product details
+    // Create a WhatsApp message with product details and image
     const message = `Hi, I'm interested in the ${name} from Nilco Bags. Can you provide more details?`;
     const encodedMessage = encodeURIComponent(message);
     
     // Open WhatsApp with the prepared message
-    window.open(`https://wa.me/9025266485?text=${encodedMessage}`, '_blank');
+    window.open(`https://wa.me/9025266485?text=${encodedMessage}%0A${encodeURIComponent(image)}`, '_blank');
   };
 
   return (
