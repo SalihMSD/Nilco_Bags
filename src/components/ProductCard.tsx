@@ -32,6 +32,10 @@ const ProductCard = ({ image, name, delay = 0 }: ProductCardProps) => {
           alt={name} 
           className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
           loading="lazy"
+          onError={(e) => {
+            // Fallback image if Google Drive image fails to load
+            (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1491637639811-60e2756cc1c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80";
+          }}
         />
       </div>
       <div className="p-4">

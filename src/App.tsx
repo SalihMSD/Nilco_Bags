@@ -25,6 +25,14 @@ const App = () => (
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/category/:categoryId" element={<CategoryPage />} />
+            {/* Adding additional routes for subcategories */}
+            <Route path="/ladies-purses" element={<CategoryPage />} />
+            <Route path="/gents-purses" element={<CategoryPage />} />
+            <Route path="/trolley-20" element={<CategoryPage />} />
+            <Route path="/trolley-24" element={<CategoryPage />} />
+            <Route path="/trolley-28" element={<CategoryPage />} />
+            <Route path="/primary-bags" element={<CategoryPage />} />
+            <Route path="/kg-bags" element={<CategoryPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </AnimatePresence>
