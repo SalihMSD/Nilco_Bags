@@ -1,6 +1,7 @@
 
 import { motion } from 'framer-motion';
-import { MessageSquare } from 'lucide-react';
+import { MessageSquare, ExternalLink } from 'lucide-react';
+import { Button } from './ui/button';
 
 interface ProductCardProps {
   image: string;
@@ -18,6 +19,10 @@ const ProductCard = ({ image, name = '', delay = 0, hideTitle = false }: Product
     
     // Open WhatsApp with the prepared message
     window.open(`https://wa.me/9025266485?text=${encodedMessage}%0A${encodeURIComponent(image)}`, '_blank');
+  };
+
+  const openImageInNewTab = () => {
+    window.open(image, '_blank');
   };
 
   return (
@@ -40,7 +45,7 @@ const ProductCard = ({ image, name = '', delay = 0, hideTitle = false }: Product
           }}
         />
       </div>
-      <div className="p-4">
+      <div className="p-4 space-y-2">
         <div className="flex justify-between items-center">
           {!hideTitle && name && (
             <h3 className="font-medium text-sm md:text-base truncate">{name}</h3>
@@ -52,6 +57,22 @@ const ProductCard = ({ image, name = '', delay = 0, hideTitle = false }: Product
           >
             <MessageSquare size={16} />
           </button>
+        </div>
+        
+        <div className="flex items-center space-x-2 text-xs text-gray-500 bg-gray-50 p-2 rounded-md overflow-hidden">
+          <ExternalLink size={14} className="flex-shrink-0" />
+          <a 
+            href={image} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="truncate hover:text-blue-500 transition-colors"
+            onClick={(e) => {
+              e.preventDefault();
+              openImageInNewTab();
+            }}
+          >
+            {image.substring(0, 40)}...
+          </a>
         </div>
       </div>
     </motion.div>
