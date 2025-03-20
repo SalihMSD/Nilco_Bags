@@ -113,18 +113,18 @@ const productsByCategory = {
     { id: 6, name: "Modern College Bag", image: "https://drive.google.com/uc?export=view&id=11FvDUndsN6DehfwppQKNM2PgzS4q9To0" },
   ],
   'school-bags': [
-    { id: 1, name: "Classic School Backpack", image: "https://images.unsplash.com/photo-1588072433116-9a1e2b4e4ad2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" },
-    { id: 2, name: "Elementary School Bag", image: "https://images.unsplash.com/photo-1445633629932-0029acc44e88?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" },
-    { id: 3, name: "Kids Cartoon Backpack", image: "https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" },
-    { id: 4, name: "Teen School Bag", image: "https://images.unsplash.com/photo-1544816155-12df9643f363?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" },
+    { id: 1, name: "Classic School Backpack", image: "https://drive.google.com/uc?export=view&id=1fE72VoGbUD5Z6MatLN2AsIfN97Q1Um0x" },
+    { id: 2, name: "Elementary School Bag", image: "https://drive.google.com/uc?export=view&id=1-6mRRrVFULIQ5qdEyTc1kwPnCyPffLaY" },
+    { id: 3, name: "Kids Cartoon Backpack", image: "https://drive.google.com/uc?export=view&id=1zQdCkb2p6OoJxYLgEtal3vHHdqGN6khM" },
+    { id: 4, name: "Teen School Bag", image: "https://drive.google.com/uc?export=view&id=1dMhpWctaNqxYmYhr5KBAbnrd5QShBvE6" },
   ],
   'backpacks': [
-    { id: 13, name: "Urban Backpack", image: "https://images.unsplash.com/photo-1491637639811-60e2756cc1c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" },
-    { id: 14, name: "Daily Commuter", image: "https://images.unsplash.com/photo-1577733975197-3b950ca5cabe?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" },
+    { id: 13, name: "Urban Backpack", image: "https://drive.google.com/uc?export=view&id=1HgpCaWWfsslXOCDimh2BWBWbsQ1DzAj3" },
+    { id: 14, name: "Daily Commuter", image: "https://drive.google.com/uc?export=view&id=1B84SUHmGIwh7lDRVQDi8eGExHdyMs9wB" },
   ],
   'belts': [
-    { id: 25, name: "Formal Leather Belt", image: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" },
-    { id: 26, name: "Casual Belt", image: "https://images.unsplash.com/photo-1553704571-c32d38ec9d21?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" },
+    { id: 25, name: "Formal Leather Belt", image: "https://drive.google.com/uc?export=view&id=1YnIYuafZho0VMJdEJvgJjxkhkjK9tb9Z" },
+    { id: 26, name: "Casual Belt", image: "https://drive.google.com/uc?export=view&id=1QovR0_F0PpwhUhxuZl6N3Sgi_FQGERGx" },
   ],
 };
 
@@ -185,6 +185,7 @@ const CategoryPage = () => {
                     name={product.name} 
                     image={product.image}
                     delay={index}
+                    hideTitle={true}
                   />
                 ))}
               </div>

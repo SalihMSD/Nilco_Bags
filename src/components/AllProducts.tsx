@@ -7,7 +7,7 @@ const categories = [
     id: 1,
     name: "School Bags",
     count: 4,
-    image: "https://images.unsplash.com/photo-1588072433116-9a1e2b4e4ad2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "https://drive.google.com/uc?export=view&id=1fE72VoGbUD5Z6MatLN2AsIfN97Q1Um0x",
     route: "school-bags"
   },
   {
@@ -35,7 +35,7 @@ const categories = [
     id: 5,
     name: "Backpacks",
     count: 2,
-    image: "https://images.unsplash.com/photo-1491637639811-60e2756cc1c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "https://drive.google.com/uc?export=view&id=1HgpCaWWfsslXOCDimh2BWBWbsQ1DzAj3",
     route: "backpacks"
   },
   {
@@ -105,7 +105,7 @@ const categories = [
     id: 15,
     name: "Belts",
     count: 2,
-    image: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "https://drive.google.com/uc?export=view&id=1YnIYuafZho0VMJdEJvgJjxkhkjK9tb9Z",
     route: "belts"
   },
   {
